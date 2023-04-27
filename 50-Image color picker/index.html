@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image color picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://source.unsplash.com/random/?flower" alt="">
+        </div>
+        <div class="btn-container">
+            <div class="input-image">
+                <input type="file" id="image">
+                <label for="image" class="btn">Open Image</label>
+            </div>
+            <button class="btn" id="pick-color">Pick Color</button>
+        </div>
+        <div class="result-container">
+            <div class="inputs">
+                <div class="input-container">
+                    <input type="text" class="hex-code" readonly placeholder="Select a color">
+                    <button class="copy-hex"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <div class="input-container">
+                    <input type="text" class="rgb-code" readonly placeholder="Select a color">
+                    <button class="copy-rgb"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+            <div class="selected-color"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
